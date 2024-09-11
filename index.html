@@ -13,62 +13,81 @@
     </head>
 <body class="bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 text-gray-100 font-sans">
 
-    <nav class="fixed w-full top-0 left-0 text-gray-100 shadow-md z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-center items-center">
-            <ul class="flex space-x-6">
-                <li><a href="#sobre-mi" class="hover:text-blue-00 transition-colors">Sobre mí</a></li>
-                <li><a href="#proyectos" class="hover:text-blue-00 transition-colors">Proyectos</a></li>
-                <li><a href="#experiencia" class="hover:text-blue-00 transition-colors">Experiencia</a></li>
-                <li><a href="#skills" class="hover:text-blue-00 transition-colors">Skills</a></li>
-                <li><a href="#educacion" class="hover:text-blue-00 transition-colors">Educación</a></li>
-                <li><a href="#contacto" class="hover:text-blue-00 transition-colors">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
-
+        <nav class="fixed w-full top-0 left-0 text-gray-100 shadow-md z-50 bg-gray-900/10">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <div class="text-2xl font-semibold">Francisco López Villa</div>                
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#sobre-mi" class="hover:text-blue-500 transition-colors">Sobre mí</a></li>
+                    <li><a href="#proyectos" class="hover:text-blue-500 transition-colors">Proyectos</a></li>
+                    <li><a href="#experiencia" class="hover:text-blue-500 transition-colors">Experiencia</a></li>
+                    <li><a href="#skills" class="hover:text-blue-500 transition-colors">Skills</a></li>
+                    <li><a href="#educacion" class="hover:text-blue-500 transition-colors">Educación</a></li>
+                    <li><a href="#contacto" class="hover:text-blue-500 transition-colors">Contacto</a></li>
+                </ul>
+                <button id="menu-button" class="md:hidden text-gray-100">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="fixed inset-0 bg-gray-900 bg-opacity-90 text-gray-100 transform -translate-x-full transition-transform md:hidden">
+                <div class="flex justify-end p-6">
+                    <button id="close-button" class="text-gray-100 text-2xl">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <ul class="flex flex-col items-center space-y-6">
+                    <li><a href="#sobre-mi" class="text-2xl hover:text-blue-500">Sobre mí</a></li>
+                    <li><a href="#proyectos" class="text-2xl hover:text-blue-500">Proyectos</a></li>
+                    <li><a href="#experiencia" class="text-2xl hover:text-blue-500">Experiencia</a></li>
+                    <li><a href="#skills" class="text-2xl hover:text-blue-500">Skills</a></li>
+                    <li><a href="#educacion" class="text-2xl hover:text-blue-500">Educación</a></li>
+                    <li><a href="#contacto" class="text-2xl hover:text-blue-500">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
     <div class="container mx-auto px-6 py-12 mt-20">
         <section id="sobre-mi" class="p-8 mb-12 bg-gray-900 rounded-lg border border-gray-700">
-            <h1 class="text-4xl font-semibold mb-4">Sobre mí</h1>
-            <p class="text-gray-300 mb-6">Soy un desarrollador Front-end con experiencia en React y Next.js. Busco proyectos que me permitan enfrentar nuevos retos y contribuir al desarrollo de soluciones efectivas y funcionales.</p>
+            <h1 class="text-3xl md:text-4xl font-semibold mb-4">Sobre mí</h1>
+            <p class="text-gray-300 mb-6 text-base md:text-lg">Soy un desarrollador Front-end con experiencia en React y Next.js. Busco proyectos que me permitan enfrentar nuevos retos y contribuir al desarrollo de soluciones efectivas y funcionales.</p>
             
-            <div class="flex space-x-4">
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
                 <a href="https://www.linkedin.com/in/francisco-lopez-villa-91b317260/" class="bg-blue-700 text-white py-2 px-4 rounded-lg shadow-md hover:bg-blue-600 transition-colors flex items-center space-x-2">
                     <i class="fab fa-linkedin text-xl"></i>
-                    <span>LinkedIn</span>
+                    <span class="text-sm md:text-base">LinkedIn</span>
                 </a>
-                <a href="https://github.com/LopezVillaFrancisco" class="bg-gray-700 text-white py-2 px-4 rounded-lg shadow-md hover:bg-gray-700 transition-colors flex items-center space-x-2">
+                <a href="https://github.com/LopezVillaFrancisco" class="bg-gray-700 text-white py-2 px-4 rounded-lg shadow-md hover:bg-gray-600 transition-colors flex items-center space-x-2">
                     <i class="fab fa-github text-xl"></i>
-                    <span>GitHub</span>
+                    <span class="text-sm md:text-base">GitHub</span>
                 </a>
             </div>
         </section>
-        
-        
+    
         <section id="experiencia" class="p-8 rounded-lg mb-12">
-            <h2 class="text-3xl font-semibold mb-4">Experiencia</h2>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Experiencia</h2>
             <div class="space-y-6">
                 <div class="p-4 bg-gray-900 border border-gray-700 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold text-gray-200">Proyecto Freelance</h3>
-                    <a href="https://allxskills.netlify.app/" target="_blank" class="text-blue-400 hover:underline"><i class="fas fa-link"></i> Ver proyecto</a>
-                    <p class="text-gray-400">Trabajo en desarrollo web freelance con diversas tecnologías.</p>
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-200">Proyecto Freelance</h3>
+                    <a href="https://allxskills.netlify.app/" target="_blank" class="text-blue-400 hover:underline flex items-center space-x-1">
+                        <i class="fas fa-link"></i>
+                        <span>Ver proyecto</span>
+                    </a>
+                    <p class="text-gray-400 text-sm md:text-base">Trabajo en desarrollo web freelance con diversas tecnologías.</p>
                 </div>
                 <div class="p-4 bg-gray-900 border border-gray-700 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold text-gray-200">Next JS Junior Developer en DPS Advertising Software Solutions</h3>
-                    <p class="text-gray-400">Marzo 2024 - Septiembre 2024</p>
-                    <p class="text-gray-300">Desarrollador Junior en Next JS trabajando en la creación de aplicaciones web modernas. Utilización de tecnologías como React, Next JS, y Tailwind CSS.</p>
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-200">Next JS Junior Developer en DPS Advertising Software Solutions</h3>
+                    <p class="text-gray-400 text-sm md:text-base">Marzo 2024 - Septiembre 2024</p>
+                    <p class="text-gray-300 text-sm md:text-base">Desarrollador Junior en Next JS trabajando en la creación de aplicaciones web modernas. Utilización de tecnologías como React, Next JS, y Tailwind CSS.</p>
                 </div>
             </div>
         </section>
-
+    
         <section id="proyectos" class="p-8 rounded-lg mb-12">
-            <h2 class="text-3xl font-semibold mb-6">Proyectos</h2>
-            <div class="space-y-8">        
-                <div class="flex flex-col md:flex-row bg-gray-900 p-6 rounded-lg border border-gray-700 shadow-md hover:transition-shadow">
-                    <img src="AllxSkills.jpg" alt="Imagen del proyecto 2" class="w-full md:w-1/2 h-48 object-cover rounded-lg mb-4 md:mb-0 md:mr-6">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6">Proyectos</h2>
+            <div class="space-y-8">
+                <div class="flex flex-col md:flex-row bg-gray-900 p-6 rounded-lg border border-gray-700 shadow-md hover:shadow-lg transition-shadow">
+                    <img src="AllxSkills.jpg" alt="Imagen del proyecto AllxSkills" class="w-full md:w-1/2 h-48 object-cover rounded-lg mb-4 md:mb-0 md:mr-6">
                     <div class="w-full md:w-1/2 flex flex-col justify-between">
-                        <h3 class="text-2xl font-semibold text-gray-200 mb-2">AllxSkills</h3>
-                        <p class="text-gray-400 mb-4">Proyecto freelance en el cual se utilizó React y CSS para seguir las guías de un diseño de Figma.</p>
-        
+                        <h3 class="text-xl md:text-2xl font-semibold text-gray-200 mb-2">AllxSkills</h3>
+                        <p class="text-gray-400 text-sm md:text-base mb-4">Proyecto freelance en el cual se utilizó React y CSS para seguir las guías de un diseño de Figma.</p>
                         <div class="space-y-2 mb-4">
                             <a href="https://allxskills.netlify.app/" class="bg-blue-600 text-white py-1 px-2 rounded flex items-center space-x-1 w-36" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-link"></i>
@@ -79,9 +98,8 @@
                                 <span>Ver en GitHub</span>
                             </a>
                         </div>
-        
-                        <div class="flex flex-wrap space-x-2">
-                            <span class="bg-blue-400 text-white py-1 px-2 rounded flex items-center space-x-1">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-400 w-22 text-white py-1 px-2 rounded flex items-center space-x-1">
                                 <i class="fab fa-react text-xl"></i>
                                 <span>React</span>
                             </span>
@@ -92,26 +110,23 @@
                         </div>
                     </div>
                 </div>
-        
-                <div class="flex flex-col md:flex-row bg-gray-900 p-6 rounded-lg border border-gray-700 shadow-md hover:transition-shadow">
+                <div class="flex flex-col md:flex-row bg-gray-900 p-6 rounded-lg border border-gray-700 shadow-md hover:shadow-lg transition-shadow">
                     <img src="SolarPanelPro.jpg" alt="Imagen del proyecto Solar Panel" class="w-full md:w-1/2 h-48 object-cover rounded-lg mb-4 md:mb-0 md:mr-6">
                     <div class="w-full md:w-1/2 flex flex-col justify-between">
-                        <h3 class="text-2xl font-semibold text-gray-200 mb-2">Solar Panel Page</h3>
-                        <p class="text-gray-400 mb-4">Página web para una empresa de paneles solares desarrollada con React y Tailwind CSS.</p>
-        
+                        <h3 class="text-xl md:text-2xl font-semibold text-gray-200 mb-2">Solar Panel Page</h3>
+                        <p class="text-gray-400 text-sm md:text-base mb-4">Página web para una empresa de paneles solares desarrollada con React y Tailwind CSS.</p>
                         <div class="space-y-2 mb-4">
                             <a href="https://solarpanelpage.netlify.app/" class="bg-blue-600 text-white py-1 px-2 rounded flex items-center space-x-1 w-36" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-link"></i>
                                 <span>Ver en Web</span>
-                            </a> 
+                            </a>
                             <a href="https://github.com/LopezVillaFrancisco/SolarPanel" class="bg-gray-700 text-white py-1 px-2 rounded flex items-center space-x-1 w-36" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
                                 <span>Ver en GitHub</span>
                             </a>
                         </div>
-        
-                        <div class="flex flex-wrap space-x-2">
-                            <span class="bg-blue-400 text-white py-1 px-2 rounded flex items-center space-x-1">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-400 w-22 text-white py-1 px-2 rounded flex items-center space-x-1">
                                 <i class="fab fa-react text-xl"></i>
                                 <span>React</span>
                             </span>
@@ -124,26 +139,23 @@
                         </div>
                     </div>
                 </div>
-        
-                <div class="flex flex-col md:flex-row bg-gray-900 p-6 rounded-lg border border-gray-600 shadow-md hover:transition-shadow">
+                <div class="flex flex-col md:flex-row bg-gray-900 p-6 rounded-lg border border-gray-600 shadow-md hover:shadow-lg transition-shadow">
                     <img src="RealEstate.jpg" alt="Imagen del proyecto Real Estate" class="w-full md:w-1/2 h-48 object-cover rounded-lg mb-4 md:mb-0 md:mr-6">
                     <div class="w-full md:w-1/2 flex flex-col justify-between">
-                        <h3 class="text-2xl font-semibold text-gray-200 mb-2">Real Estate Page</h3>
-                        <p class="text-gray-400 mb-4">Página web para una empresa de bienes raíces desarrollada con React y Tailwind CSS.</p>
-        
+                        <h3 class="text-xl md:text-2xl font-semibold text-gray-200 mb-2">Real Estate Page</h3>
+                        <p class="text-gray-400 text-sm md:text-base mb-4">Página web para una empresa de bienes raíces desarrollada con React y Tailwind CSS.</p>
                         <div class="space-y-2 mb-4">
                             <a href="https://franciscolopezvillarealestate.netlify.app/" class="bg-blue-600 text-white py-1 px-2 rounded flex items-center space-x-1 w-36" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-link"></i>
                                 <span>Ver en Web</span>
-                            </a> 
+                            </a>
                             <a href="https://github.com/LopezVillaFrancisco/Real-Estate-Page" class="bg-gray-700 text-white py-1 px-2 rounded flex items-center space-x-1 w-36" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
                                 <span>Ver en GitHub</span>
                             </a>
                         </div>
-        
-                        <div class="flex flex-wrap space-x-2">
-                            <span class="bg-blue-400 text-white py-1 px-2 rounded flex items-center space-x-1">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-400 w-22 text-white py-1 px-2 rounded flex items-center space-x-1">
                                 <i class="fab fa-react text-xl"></i>
                                 <span>React</span>
                             </span>
@@ -156,49 +168,48 @@
                         </div>
                     </div>
                 </div>
-        
             </div>
         </section>
         
         <section id="skills" class="p-8 rounded-lg mb-12">
-            <h2 class="text-3xl font-semibold mb-4">Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:transition-shadow">
+            <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <i class="fab fa-html5 text-red-600 text-3xl"></i>
-                    <span class="text-gray-300">HTML5</span>
+                    <span class="text-gray-300 text-lg">HTML5</span>
                 </div>
-                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:transition-shadow">
+                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <i class="fab fa-css3-alt text-blue-600 text-3xl"></i>
-                    <span class="text-gray-300">CSS3</span>
+                    <span class="text-gray-300 text-lg">CSS3</span>
                 </div>
-                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:transition-shadow">
+                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <i class="fab fa-js-square text-yellow-600 text-3xl"></i>
-                    <span class="text-gray-300">JavaScript</span>
+                    <span class="text-gray-300 text-lg">JavaScript</span>
                 </div>
-                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:transition-shadow">
+                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <i class="fab fa-react text-blue-600 text-3xl"></i>
-                    <span class="text-gray-300">React</span>
+                    <span class="text-gray-300 text-lg">React</span>
                 </div>
-                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:transition-shadow">
+                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <i class="fab fa-react text-indigo-500 text-3xl"></i>
-                    <span class="text-gray-300">React Native</span>
+                    <span class="text-gray-300 text-lg">React Native</span>
                 </div>
-                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:transition-shadow">
+                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <i class="fas fa-database text-yellow-600 text-3xl"></i>
-                    <span class="text-gray-300">MySQL</span>
+                    <span class="text-gray-300 text-lg">MySQL</span>
                 </div>
-                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:transition-shadow">
+                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <i class="fas fa-database text-green-600 text-3xl"></i>
-                    <span class="text-gray-300">MongoDB</span>
+                    <span class="text-gray-300 text-lg">MongoDB</span>
                 </div>
-                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:transition-shadow">
+                <div class="flex items-center border-gray-700 border space-x-3 bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
                         <path fill="#00acc1" d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"></path>
-                        </svg>
-                    <span class="text-gray-300">Tailwind CSS</span>
+                    </svg>
+                    <span class="text-gray-300 text-lg">Tailwind CSS</span>
                 </div>
             </div>
-        </section>                  
+        </section>
 
         <section id="educacion" class="p-8 rounded-lg mb-12">
             <h2 class="text-3xl font-semibold mb-4">Educación</h2>
@@ -259,6 +270,15 @@
                 <button type="submit" class="bg-green-700 text-white px-6 w-full py-3 rounded-lg hover:bg-green-900 transition-colors">Enviar</button>
             </form>            
         </section>
-    </div>
+    </div> 
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.remove('-translate-x-full');
+        });
+
+        document.getElementById('close-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.add('-translate-x-full');
+        });
+    </script>
 </body>
 </html>
